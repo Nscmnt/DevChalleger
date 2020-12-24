@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  font-family: 'roboto', sans-serif;
+
+  box-sizing: border-box;
+}
+
+:root{
+  --orange: #D2872C;
+  --gray: #766F68;
+}
+.content{
+  width: 80%;
+  max-width: 1200px; 
+  height: 100vh;
+
+  margin: auto;  
+}
+
+header{
+  padding: 50px 0 0 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.logo{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--orange);
+}
+#menu-top{
+  display: flex;
+  justify-content: flex-end;  
+}
+
+#menu-top li{
+  list-style: none;
+}
+#menu-top a {
+  text-decoration: none;
+
+  margin-right: 15px;
+  color: var(--gray);
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+#menu-top a:hover{
+  opacity: 0.7;
+}
+
+.lbl-burguer, #chk-burguer{
+  display: none;
+}
+
+#main{
+  width: 100%;
+  height: 500px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  
+}
+.bg-image{
+  width: 70%;
+  height: 100%;
+
+  background-image: url(../assets/team.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+}
+
+.content-text{  
+  width: 30%;
+}
+
+.content-text h1{
+  font-size: 2.7rem;
+
+  margin: 30px 0 20px 0;
+
+  color: var(--gray);
+}
+
+.content-text p{
+  width: auto;
+  color: var(--gray);
+
+  margin-bottom: 30px;
+
+  font-size: 1.4rem;
+}
+
+.content-text button{
+  width: 70%;
+  height: 60px;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  border:none;
+  color:aliceblue; 
+
+  background-color: var(--orange);
+
+  border-radius: 15px;
+
+  margin-top: 10px;
+
+  cursor: pointer;
+  outline: none;
+
+  transition: all .4s;
+}
+
+.content-text button:hover{
+  opacity: 0.9;
+}
+
+@media (max-width: 800px){
+  .content{ 
+    width: 99%;
+  
+  }
+  header{
+    padding: 30px;
+  }
+
+  .logo{
+    font-size: 1.2rem;
+  }
+
+  nav{
+    display: none;
+  }
+  .lbl-burguer{
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  #chk-burguer:checked ~ nav {
+    display: block;
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+  } 
+
+  #main{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .bg-image{
+    width: 100%;
+    height: 50%;
+    background-position: top;
+    background-size: contain;
+  }
+
+  .content-text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-text h1{
+    text-align: center;
+    font-size: 2rem;
+
+    margin: 0;
+  }
+  .content-text p{
+    margin: 15px;
+  }
+
+  .content-text button{
+    width: 60%;
+  }
+
+}
+
+@media (max-width: 500px){
+  #chk-burguer:checked ~ nav #menu-top{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    
+  } 
+  .content-text{
+    width: 100%;
+  }
+
+  .content-text h1{
+    font-size: 1.7rem;
+  }
+  .content-text p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .content-text button{
+    width: 60%;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+}
