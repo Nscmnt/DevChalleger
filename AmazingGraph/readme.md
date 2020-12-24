@@ -11,11 +11,11 @@
     
   </p>
 
-<img src="https://trello-attachments.s3.amazonaws.com/590fa7f5a8ab015d0cf88052/590fa896d2d25e50583de620/cb82a7069f698bde3bafb4ea20316951/mockuper_(1)_(1).png" width="380" height="380">
+<img align="center" src="https://trello-attachments.s3.amazonaws.com/590fa7f5a8ab015d0cf88052/590fa896d2d25e50583de620/cb82a7069f698bde3bafb4ea20316951/mockuper_(1)_(1).png" width="380" height="380">
 
 
 
-<img src="https://trello-attachments.s3.amazonaws.com/590fa7f5a8ab015d0cf88052/590fa896d2d25e50583de620/255f1d04baf02f7e818c6e4ec36ddddf/desktop.png" width="380" height="380">
+<img align="center" src="https://trello-attachments.s3.amazonaws.com/590fa7f5a8ab015d0cf88052/590fa896d2d25e50583de620/255f1d04baf02f7e818c6e4ec36ddddf/desktop.png" width="380" height="380">
 
 # Techs: 
 HTML<br>

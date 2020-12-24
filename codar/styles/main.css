@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-decoration: none;
+  text-transform: none;
+
+  color: #000;
+
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 14px;
+  font-family: 'roboto';
+}
+
+#content{
+  width: 100vw;
+  height: 100vh;
+
+  box-sizing: border-box;
+}
+
+.cabecalho{
+ width: 90%;
+ height: 15%;
+
+ margin: 10% auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ 
+}
+
+.cabecalho .logo{
+  font-size: 2.5rem;
+  font-weight: 600;
+
+  color: #D6000D;
+  
+  margin-bottom: 15px;
+
+  text-align: center;
+}
+
+.cabecalho .logo span{
+  color: #000;
+
+  font-weight: 600;
+}
+
+#menu-top ul {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+#menu-top ul a:hover{
+  color: rgb(109, 107, 107);
+}
+
+#menu-top ul #login{
+  display: none;
+  color: #000;
+}
+
+.principal{
+  width: 90%;
+  height: auto;
+  margin: 10% auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.principal .imagem-bg{
+  width: 100%;
+  height: 300px;
+  background-image: url(../assets/video_call.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.conteudo-principal{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.conteudo-principal .titulo{
+  text-align: center;
+
+  margin: 15px 0;
+  font-size: 2.5rem;
+  color: #D6000D;
+}
+
+.conteudo-principal .titulo small{
+  color: #000;
+
+  font-size: 1.2rem;
+}
+
+.conteudo-principal .botao{
+  width: 80%;
+  height: 50px;
+  outline: none;
+
+  font-size: 1.4rem;
+
+  border-radius: 10px;
+
+  color: #FFF;
+  background-color: #D6000D;
+
+  cursor: pointer;
+
+  transition: all .5s;
+}
+
+.conteudo-principal .botao:hover{
+  background-color: #d8111e;
+}
