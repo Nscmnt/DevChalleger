@@ -12,7 +12,7 @@
 }
 
 html{
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'roboto';
 }
 
@@ -20,14 +20,17 @@ html{
   width: 100vw;
   height: 100vh;
 
+  margin: auto;
+  max-width: 1200px;
+
   box-sizing: border-box;
 }
 
 .cabecalho{
  width: 90%;
- height: 15%;
+ height: 50px;
 
- margin: 10% auto;
+ margin: 20px auto;
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -63,13 +66,23 @@ html{
 
 #menu-top ul #login{
   display: none;
-  color: #000;
+  color: #FFF;
+
+  padding: 8px;
+  height: 30px;
+  width: 100px;
+
+  text-align: center;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #D6000D;
+
 }
 
 .principal{
   width: 90%;
-  height: auto;
-  margin: 10% auto;
+  height: calc(100vh - 50px);
+  margin: 30px auto;
 
   display: flex;
   flex-direction: column;
@@ -86,6 +99,9 @@ html{
 
 .conteudo-principal{
   width: 100%;
+  height: auto;
+
+  margin: auto;
 
   display: flex;
   flex-direction: column;
@@ -107,9 +123,10 @@ html{
 }
 
 .conteudo-principal .botao{
-  width: 80%;
+  width: 50%;
   height: 50px;
-  outline: none;
+  
+  border:none;
 
   font-size: 1.4rem;
 
@@ -125,4 +142,301 @@ html{
 
 .conteudo-principal .botao:hover{
   background-color: #d8111e;
+}
+#servicos{
+  display: flex;
+  flex-direction: column;
+}
+.image-sevicos{
+  width: 100%;
+  height: 300px;
+
+  margin: 30px auto;
+  background-image: url(../assets/coding_.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content-servicos {
+  width: 50%;
+
+  margin: auto;
+}
+
+.content-servicos .check-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content-servicos .check-list .check{
+  font-size: 1.1rem;
+
+  display: flex;
+  align-items: center;
+}
+
+/* .content-servicos .check-list .check::before{
+    content: url(../assets/check-2.svg);
+} */
+
+.content-servicos .check-list .check img{
+  width: 35px;
+  height: 35px;
+
+  margin-right: 10px;
+}
+
+#contato{
+  width: 80%;
+  margin: 40px auto;
+  
+}
+
+.content-contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contato h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.content-contato #tel{
+  width: 60%;
+  height: 50px;
+
+  font-size: 1rem;
+
+  padding: 20px;
+
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(206, 204, 204);
+
+  outline-style: none;
+}
+.content-contato #botao{
+  width: 60%;
+  height: 50px;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 5px;
+  border:none;
+  border-radius: 10px;
+
+  background-color: #D6000D;
+  color: #FFF;
+
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.content-contato #botao:hover{
+  color: #D6000D;
+
+  background-color: #fff;
+
+  border: 1px solid #D6000D;
+}
+
+
+#depoimentos{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+}
+
+#depoimentos .card{
+  width: 100%;
+  height: 180px;
+
+  margin: 30px auto;
+  padding: 20px;
+
+  background-color: rgb(206, 204, 204);
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#depoimentos .card .img-info{
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#depoimentos .card .img-info img{
+  margin-right: 20px;
+}
+
+#depoimentos .card .nome-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+#depoimentos .card .nome-info .nome{
+  font-weight: 400;
+}
+
+#depoimentos .card .nome-info .empresa{
+  font-size: 0.8rem;
+
+  font-weight: 600;
+}
+
+#rodape{
+  width: 100%;
+  height: 400px;
+  padding: 15px;
+
+  margin-top: 25px;
+
+  background-color: black;
+}
+
+#rodape h1{
+  color: #FFF;
+
+  font-style: italic;
+  text-align: center;
+
+  font-size: 2.4rem;
+}
+
+#rodape p, h4{
+  color: #FFF;
+  
+}
+
+.rodape-logo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#rodape .rodape-logo p{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#rodape .content-rodape{
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+#rodape .content-rodape .sobre h4,.contato h4, .redes-sociais h4{
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+#rodape .content-rodape .sobre p,.contato p, .redes-sociais p{
+  margin-bottom: 30px;
+}
+
+#rodape .redes-sociais img{
+  width: 40px;
+  height: 40px;
+
+  margin-right: 10px;
+}
+
+@media (min-width:800px){
+  .cabecalho{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px;
+
+    margin: 0;
+  }
+  #menu-top ul #login{
+    display: block;
+  }
+
+  #menu-top ul{
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #menu-top ul li{
+    margin-right: 20px;
+  }
+  .principal{
+    flex-direction: row;
+    height: 80%;
+  }
+
+  .conteudo-principal{
+    height: 300px;
+    justify-content: flex-start;
+  }
+  #servicos{
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  #servicos .image-sevicos{
+    margin: 0;
+  }
+
+  .content-servicos .check-list{
+    margin-left: 70px;
+  }
+
+  #contato h3{
+    text-align: start;
+  }
+  .content-contato{
+    width: 60%;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .content-contato input{
+    margin-right: 10px;
+  }
+
+  #depoimentos {
+    flex-direction: row;
+  }
+
+  #depoimentos .card{
+    width: 45%;
+  }
+
+  #rodape{
+    height: 200px;
+  }
+  #rodape .rodape-logo, .sobre, .contato, .redes-sociais{
+    width: 30%;
+
+     margin-right: 2%;
+  }
+
+  #rodape .content-rodape{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #rodape .contato p{
+    line-height: 25px;
+  }
 }
