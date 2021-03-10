@@ -366,7 +366,7 @@ html{
 
     padding: 30px;
 
-    margin: 0;
+    margin: 0 auto;
   }
   #menu-top ul #login{
     display: block;
